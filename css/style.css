@@ -333,3 +333,23 @@ padding-bottom:20px; }
   background: var(--dot-active) !important;
   border-color: var(--dot-active) !important;
 }
+.jx-wrap{
+  position: relative;
+  width: 100%;
+  max-width: 680px;   /* عدّليها إذا تبغين أقصى عرض */
+  margin: 0 auto;     /* توسيط العنصر */
+}
+
+.juxtapose{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;   /* النسبة الطولية/العرضية – غيّريها لو تبغين */
+  border: 0;
+}
+
+@media (max-width: 576px){
+  .juxtapose{
+    aspect-ratio: 3 / 5;  /* أطول شوي على الجوال */
+    min-height: 70vh;     /* ضمان ارتفاع مريح */
+  }
+}
