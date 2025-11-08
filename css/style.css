@@ -340,16 +340,25 @@ padding-bottom:20px; }
   margin: 0 auto;     /* توسيط العنصر */
 }
 
-.juxtapose{
+.jx-wrap {
+  position: relative;
   width: 100%;
-  height: auto;
-  aspect-ratio: 3 / 4;   /* النسبة الطولية/العرضية – غيّريها لو تبغين */
-  border: 0;
+  max-width: 680px;     /* أقصى عرض */
+  margin: 0 auto;       /* توسيط */
 }
 
-@media (max-width: 576px){
-  .juxtapose{
-    aspect-ratio: 3 / 5;  /* أطول شوي على الجوال */
-    min-height: 70vh;     /* ضمان ارتفاع مريح */
+/* الحجم العام */
+.juxtapose {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;  /* نسبة العرض للطول */
+  border: none;
+}
+
+/* تحسين خاص للموبايل */
+@media (max-width: 768px) {
+  .juxtapose {
+    aspect-ratio: 9 / 16;   /* أطول مثل شاشة الجوال */
+    min-height: 80vh;       /* يملأ أغلب الشاشة */
   }
 }
