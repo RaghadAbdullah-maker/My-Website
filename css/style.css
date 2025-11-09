@@ -101,7 +101,7 @@ header.navbar .brand {
 .section-7 .map-img{
   display: block;
   width: min(2000px, 92vw);  /* تكبر لحد 1100px وتبقى مرنة على الجوال */
-  height: 560px;             /* عدّلي الارتفاع حسب ذوقك */
+  height: 1000px;             /* عدّلي الارتفاع حسب ذوقك */
   object-fit: cover;         /* تغطي الإطار بدون تشويه */
   filter: grayscale(1) brightness(.6) contrast(1.05); /* مظهر داكن جميل */
   border-radius: 16px;
