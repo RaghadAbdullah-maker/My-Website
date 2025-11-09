@@ -107,14 +107,45 @@ header.navbar .brand {
   border-radius: 16px;
 }
 
+/* ===== تحسين تنسيق قسم الموقع على الجوال ===== */
 @media (max-width: 768px){
-  .section-7 .contact-info {
-    margin-bottom: 1rem;
+
+  /* ضبط ترتيب النصوص */
+  .section-7 .title-uppercase{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: .3rem;
   }
-  .section-7 .contact-info a {
-    font-size: 15px;
+
+  /* الإيميل تحت العنوان مباشرة */
+  .section-7 .mail{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #e4e4e4;
+    text-decoration: underline;
+    margin-top: .2rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.4;
+  }
+
+  /* نخفي “Available on” لأنه يسبب زحمة */
+  .section-7 p:has(> span:contains("Available on")) {
+    display: none !important;
+  }
+
+  /* الفورم يبتعد قليلاً للأسفل */
+  .section-7 form{
+    margin-top: .5rem;
+  }
+
+  /* الخريطة أو الخلفية السوداء تبقى بمقاس أصغر */
+  .section-7 .map-img{
+    height: 260px;
+    object-fit: cover;
   }
 }
+
 .section-7 { 
   
   position: relative;
