@@ -108,11 +108,11 @@ header.navbar .brand {
 }
 
 @media (max-width: 768px){
-  .section-7{
-    padding: 60px 0 60px;
+  .section-7 .contact-info {
+    margin-bottom: 1rem;
   }
-  .section-7 .map-img{
-    height: 300px;
+  .section-7 .contact-info a {
+    font-size: 15px;
   }
 }
 .section-7 { 
