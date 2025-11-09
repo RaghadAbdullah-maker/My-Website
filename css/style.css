@@ -106,65 +106,69 @@ header.navbar .brand {
   filter: grayscale(1) brightness(.6) contrast(1.05); /* مظهر داكن جميل */
   border-radius: 16px;
 }
-/* ====== Contact section – mobile (≤768px) ====== */
-@media (max-width: 768px){
+/* /* ========== CONTACT – تحسين عرض الخريطة على الجوال ========== */
+@media (max-width: 768px) {
 
-  /* عنوان المدينة */
-  .section-7 .title-uppercase{
-    text-align:center;
-    font-size:22px;
-    line-height:1.3;
-    margin:0 0 .6rem;
-    color:#000;
+  /* منع الانزلاق الأفقي */
+  .section-7 { 
+    overflow: hidden;
   }
 
-  /* الإيميل تحت العنوان */
-  .section-7 .mail{
-    display:block;
-    text-align:center;
-    font-size:14px;
-    color:#000;
-    text-decoration:underline;
-    margin:.2rem 0 1.2rem;
-    line-height:1.4;
-    word-break:break-word;
+  /* تعديل صندوق الخريطة */
+  .section-7 .section-bg {
+    position: relative !important;   /* نمنعها من التمدد خارج الصفحة */
+    inset: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
   }
 
-  /* منع أي سحب أفقي في الجوال */
-  .section-7{ overflow:hidden; }
-
-  /* الحاوية السوداء (الخريطة) تملأ العرض وتتمركز */
-  .section-7 .map-box{
-    width: min(100svw, 100vw);   /* دعم iOS + كل المتصفحات */
+  .section-7 .map-box {
+    width: 100%;                      /* تغطي عرض الشاشة بالكامل */
     max-width: 100%;
-    margin:0 auto;
-    border-radius:0;
-    overflow:hidden;
-    position:relative;
-    left:50%;
-    transform:translateX(-50%);
-    box-shadow:none;             /* لو تبين ظل: 0 10px 30px rgba(0,0,0,.25); */
+    margin: 0 auto;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    transform: none;
   }
 
-  /* صورة الخريطة داخلها */
-  .section-7 .map-img{
-    display:block;
-    width:100%;
-    height:320px;                /* زيديها إلى 360px إذا تبينها أطول */
-    object-fit:cover;
-    object-position:center;
-    filter:grayscale(1) brightness(.6) contrast(1.05);
+  .section-7 .map-img {
+    display: block;
+    width: 100%;
+    height: 330px;                    /* زيديها لو تبغينها أطول */
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(1) brightness(.6) contrast(1.05);
   }
 
-  /* النموذج تحت كل شيء بمسافة خفيفة */
-  .section-7 form{
-    position:relative;
-    z-index:5;                   /* فوق الخريطة */
-    margin-top:.8rem;
-    padding:0 10px;
+  /* ترتيب النصوص فوق الخريطة */
+  .section-7 .title-uppercase {
+    text-align: center;
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-7 .mail {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    text-decoration: underline;
+    margin-bottom: 1.2rem;
+    word-break: break-word;
+  }
+
+  /* النموذج */
+  .section-7 form {
+    position: relative;
+    z-index: 5;
+    margin-top: 0.8rem;
+    padding: 0 10px;
   }
 }
-
 
 .section-7 { 
   
