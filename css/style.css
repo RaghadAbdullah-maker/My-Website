@@ -108,11 +108,7 @@ header.navbar .brand {
 }
 /* ====== Contact section – mobile (≤768px) ====== */
 /* ===== خريطة خلف الفورم (نسخة محسّنة للجوال) ===== */
-@media (max-width: 768px) {
-  .section-7 {
-    background: linear-gradient(180deg, #6a747f 0%, #6a747f 100%);
-    padding: 40px 0;
-  }
+
   @media (max-width: 768px) {
   .section-7 .section-bg,
   .section-7 .map-box,
@@ -122,6 +118,18 @@ header.navbar .brand {
   }
 }
 
+.section-7 {
+    background:
+      radial-gradient(80% 70% at 28% 68%, rgba(248,240,229,.65) 0%, rgba(248,240,229,0) 60%),
+      radial-gradient(70% 60% at 22% 78%, rgba(232,210,180,.60) 0%, rgba(232,210,180,0) 55%),
+      radial-gradient(65% 55% at 35% 75%, rgba(218,200,180,.52) 0%, rgba(218,200,180,0) 52%),
+      linear-gradient(to left, rgba(0,0,0,0) 25%, rgba(146,98,58,.34) 50%, rgba(0,0,0,0) 75%),
+      linear-gradient(180deg, #faf9f860 0%, #6a747f 100%);
+    background-blend-mode: screen, screen, screen, screen, normal;
+    background-repeat: no-repeat;
+    background-size: 160% 160%, 150% 150%, 140% 140%, 120% 100%, 100% 100%;
+    background-position: center, center, center, center, center;
+  }
 
   .section-7 .title-uppercase {
     text-align: center;
@@ -151,7 +159,7 @@ header.navbar .brand {
     width: 100%;
     border-radius: 8px;
   }
-}
+
 
 
 .section-7 { 
