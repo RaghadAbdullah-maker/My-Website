@@ -106,59 +106,65 @@ header.navbar .brand {
   filter: grayscale(1) brightness(.6) contrast(1.05); /* مظهر داكن جميل */
   border-radius: 16px;
 }
-
-/* === تنسيق سكشن التواصل للجوال فقط === */
+/* ====== Contact section – mobile (≤768px) ====== */
 @media (max-width: 768px){
 
-  /* العنوان */
-  .section-7 .title-uppercase {
-    text-align: center;
-    font-size: 22px;
-    margin-bottom: 0.6rem;
-    line-height: 1.3;
-    color: #000;
+  /* عنوان المدينة */
+  .section-7 .title-uppercase{
+    text-align:center;
+    font-size:22px;
+    line-height:1.3;
+    margin:0 0 .6rem;
+    color:#000;
   }
 
-  /* الإيميل تحت العنوان مباشرة */
-  .section-7 .mail {
-    display: block;
-    text-align: center;
-    font-size: 14px;
-    color: #000000;            /* رمادي ناعم */
-    text-decoration: underline;
-    margin-top: 0.2rem;
-    margin-bottom: 1.2rem;
-    line-height: 1.4;
-    word-break: break-word;
+  /* الإيميل تحت العنوان */
+  .section-7 .mail{
+    display:block;
+    text-align:center;
+    font-size:14px;
+    color:#000;
+    text-decoration:underline;
+    margin:.2rem 0 1.2rem;
+    line-height:1.4;
+    word-break:break-word;
   }
 
+  /* منع أي سحب أفقي في الجوال */
+  .section-7{ overflow:hidden; }
 
-  /* الفورم يجي تحت كل شي بمسافة مناسبة */
-  .section-7 form {
-    margin-top: 0.8rem;
-    padding: 0 10px;
-    position: relative;
+  /* الحاوية السوداء (الخريطة) تملأ العرض وتتمركز */
+  .section-7 .map-box{
+    width: min(100svw, 100vw);   /* دعم iOS + كل المتصفحات */
+    max-width: 100%;
+    margin:0 auto;
+    border-radius:0;
+    overflow:hidden;
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+    box-shadow:none;             /* لو تبين ظل: 0 10px 30px rgba(0,0,0,.25); */
   }
 
- .section-7 .map-box{
-    width: 100vw;            /* تغطي عرض الشاشة */
-    margin: 0 auto;          /* تتوسّط الصفحة */
-    border-radius: 0;        /* بدون حواف دائرية */
-    overflow: hidden;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  /* نكبر الصورة داخل الخريطة */
+  /* صورة الخريطة داخلها */
   .section-7 .map-img{
-    width: 100%;
-    height: 320px;           /* زيديها لو تبغين أطول */
-    object-fit: cover;
-    object-position: center;
-    filter: grayscale(1) brightness(.6) contrast(1.05);
+    display:block;
+    width:100%;
+    height:320px;                /* زيديها إلى 360px إذا تبينها أطول */
+    object-fit:cover;
+    object-position:center;
+    filter:grayscale(1) brightness(.6) contrast(1.05);
+  }
+
+  /* النموذج تحت كل شيء بمسافة خفيفة */
+  .section-7 form{
+    position:relative;
+    z-index:5;                   /* فوق الخريطة */
+    margin-top:.8rem;
+    padding:0 10px;
   }
 }
+
 
 .section-7 { 
   
