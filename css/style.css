@@ -71,10 +71,7 @@ header.navbar .brand {
 
  
   @media (max-width: 768px) {
-  .section-7 {
-    background: linear-gradient(180deg, #fafafa 0%, #eaeaea 100%);
-    padding: 40px 0;
-  } 
+ 
   .section-7 .section-bg,
   .section-7 .map-box,
   .section-7 .map-img {
