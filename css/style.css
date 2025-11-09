@@ -337,11 +337,11 @@ padding-bottom:20px; }
 /* تثبيت الاسم في الركن السفلي الأيمن */
 .section-1 .name-block {
   position: absolute;
-  left: 800px;      /* المسافة من يمين الشاشة */
-  bottom: 55px;     /* المسافة من الأسفل */
-  text-align: left;
-  z-index: 20;      /* فوق الصورة */
-  color: #000000;   /* أبيض (عدّليه حسب الخلفية) */
+  right: 24px;     /* من اليمين بدل اليسار */
+  bottom: 34px;    /* المسافة من الأسفل */
+  text-align: right;
+  z-index: 20;
+  color: #000;     /* غامق وواضح */
 }
 
 /* العنوان */
