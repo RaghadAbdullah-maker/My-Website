@@ -364,7 +364,7 @@ padding-bottom:20px; }
 /* في الجوال يكون أقرب للحافة */
 @media (max-width: 768px){
   .section-1 .name-block {
-    right: 120px;
+    right: 50px;
     bottom: 10px;
   }
   .section-1 .name-block .display-2 {
