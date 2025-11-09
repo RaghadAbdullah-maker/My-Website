@@ -110,7 +110,7 @@ header.navbar .brand {
 /* ===== خريطة خلف الفورم (نسخة محسّنة للجوال) ===== */
 @media (max-width: 768px) {
   .section-7 {
-    background: linear-gradient(180deg, #6a747f 0%, #eaeaea 100%);
+    background: linear-gradient(180deg, #6a747f 0%, #6a747f 100%);
     padding: 40px 0;
   }
   @media (max-width: 768px) {
