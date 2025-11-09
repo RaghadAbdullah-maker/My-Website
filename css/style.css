@@ -137,6 +137,7 @@ header.navbar .brand {
   .section-7 form {
     margin-top: 0.8rem;
     padding: 0 10px;
+    position: relative;
   }
 
  .section-7 .map-box{
