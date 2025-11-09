@@ -75,6 +75,12 @@ header.navbar .brand {
     background: linear-gradient(180deg, #fafafa 0%, #eaeaea 100%);
     padding: 40px 0;
   } 
+  .section-7 .section-bg,
+  .section-7 .map-box,
+  .section-7 .map-img {
+    display: none !important;
+    visibility: hidden !important;
+  }
 
   .section-7 .title-uppercase {
     text-align: center;
