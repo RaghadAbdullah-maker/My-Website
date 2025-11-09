@@ -106,6 +106,15 @@ header.navbar .brand {
   filter: grayscale(1) brightness(.6) contrast(1.05); /* مظهر داكن جميل */
   border-radius: 16px;
 }
+
+@media (max-width: 768px){
+  .section-7{
+    padding: 60px 0 60px;
+  }
+  .section-7 .map-img{
+    height: 300px;
+  }
+}
 .section-7 { 
   
   position: relative;
