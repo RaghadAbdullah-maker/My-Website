@@ -114,9 +114,13 @@ header.navbar .brand {
   .section-7 .contact-info {
     width: 100%;
     display: flex;
+    color: #000;
     justify-content: center;   /* يوسّط العنصر أفقيًا */
   }
 
+  .section-7 .title-uppercase {
+    color: #000;
+  }
   .section-7 form {
     width: 90%;                /* يقلّل العرض قليلاً للجوال */
     max-width: 500px;          /* أقصى عرض مريح */
