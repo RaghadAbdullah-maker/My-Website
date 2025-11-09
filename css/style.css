@@ -139,10 +139,23 @@ header.navbar .brand {
     padding: 0 10px;
   }
 
-  /* الخريطة أو الخلفية تبقى مضبوطة */
-  .section-7 .map-box .map-img{
-    height: 260px;
+ .section-7 .map-box{
+    width: 100vw;            /* تغطي عرض الشاشة */
+    margin: 0 auto;          /* تتوسّط الصفحة */
+    border-radius: 0;        /* بدون حواف دائرية */
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* نكبر الصورة داخل الخريطة */
+  .section-7 .map-img{
+    width: 100%;
+    height: 320px;           /* زيديها لو تبغين أطول */
     object-fit: cover;
+    object-position: center;
+    filter: grayscale(1) brightness(.6) contrast(1.05);
   }
 }
 
