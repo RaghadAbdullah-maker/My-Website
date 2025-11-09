@@ -106,69 +106,80 @@ header.navbar .brand {
   filter: grayscale(1) brightness(.6) contrast(1.05); /* مظهر داكن جميل */
   border-radius: 16px;
 }
-/* /* ========== CONTACT – تحسين عرض الخريطة على الجوال ========== */
+/* ====== Contact section – mobile (≤768px) ====== */
+/* ===== خريطة خلف الفورم (نسخة محسّنة للجوال) ===== */
 @media (max-width: 768px) {
 
-  /* منع الانزلاق الأفقي */
-  .section-7 { 
+  /* نحافظ على احتواء الصفحة */
+  .section-7 {
+    position: relative;
     overflow: hidden;
   }
 
-  /* تعديل صندوق الخريطة */
+  /* الخلفية اللي فيها الخريطة */
   .section-7 .section-bg {
-    position: relative !important;   /* نمنعها من التمدد خارج الصفحة */
-    inset: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    position: absolute;      /* تصير خلف المحتوى */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;             /* تغطي الصفحة كلها */
+    z-index: 1;               /* خلف النصوص والفورم */
   }
 
   .section-7 .map-box {
-    width: 100%;                      /* تغطي عرض الشاشة بالكامل */
-    max-width: 100%;
-    margin: 0 auto;
-    border-radius: 0;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-    position: relative;
-    left: 0;
-    transform: none;
   }
 
   .section-7 .map-img {
-    display: block;
     width: 100%;
-    height: 330px;                    /* زيديها لو تبغينها أطول */
-    object-fit: cover;
-    object-position: center;
-    filter: grayscale(1) brightness(.6) contrast(1.05);
+    height: 100%;
+    object-fit: cover;         /* تملأ بدون تشويه */
+    filter: grayscale(1) brightness(.55) contrast(1.1);
   }
 
-  /* ترتيب النصوص فوق الخريطة */
+  /* المحتوى الأمامي (النصوص والفورم) */
+  .section-7 .scrollable-content {
+    position: relative;
+    z-index: 5;                /* فوق الخريطة */
+    padding-top: 20px;
+  }
+
+  /* العنوان والإيميل */
   .section-7 .title-uppercase {
     text-align: center;
     font-size: 22px;
+    line-height: 1.3;
     color: #000;
-    margin-bottom: 0.5rem;
+    margin-bottom: .4rem;
   }
 
   .section-7 .mail {
     display: block;
     text-align: center;
-    font-size: 14px;
     color: #000;
     text-decoration: underline;
+    font-size: 14px;
     margin-bottom: 1.2rem;
-    word-break: break-word;
   }
 
-  /* النموذج */
+  /* الفورم */
   .section-7 form {
     position: relative;
-    z-index: 5;
-    margin-top: 0.8rem;
+    z-index: 6;
+    margin-top: 1rem;
     padding: 0 10px;
   }
+
+  /* عشان تكون الخلفية ثابتة وراء كل شيء */
+  .section-7 .boxed-inner,
+  .section-7 .scroll-wrap {
+    position: relative;
+    z-index: 5;
+  }
 }
+
 
 .section-7 { 
   
