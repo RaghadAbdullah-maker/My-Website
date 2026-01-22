@@ -25,7 +25,7 @@ This website was built to present my work in a clean and organized way, highligh
 ---
 
 ##  Project Pages
--Home 
+- Home 
  ![Home page](screanshots/Homee.png)
 - About 
 ![About page](screanshots/About.png)
