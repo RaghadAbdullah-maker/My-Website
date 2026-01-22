@@ -1,7 +1,6 @@
 # Portfolio
----
 
-## 📌 Description
+##  Description
 A personal portfolio website showcasing my projects, skills, and background as a programmer and UI designer.
 
 ---
@@ -11,13 +10,13 @@ This website was built to present my work in a clean and organized way, highligh
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 - HTML5
 - CSS3
 
 ---
 
-## 🚀 Features
+##  Features
 - Easy scrolling pages
 - Modern and clean design
 - Creative background
