@@ -497,3 +497,12 @@ padding-bottom:20px; }
 .case-study p{
   margin-bottom:25px;
 }
+
+
+
+.section-4 .partner-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+}
